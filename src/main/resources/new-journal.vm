@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <h3>Hi ${user.userName}, here is your list of new journals!</h3>
+#foreach ($journal in $journals)
+        <div>
+            #journal.name:#journal.category.name.
+        </div>
+
+#end
+    </body>
+</html>
